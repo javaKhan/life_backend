@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-    @Autowired
-    private UserService userService;
-
-    @RequestMapping("/login")
-    public Object login(String phone,String pwd){
-
-        return "";
-    }
+//    @Autowired
+//    private UserService userService;
+//
+//    @RequestMapping("/login")
+//    public Object login(String phone,String pwd){
+//        return "";
+//    }
 }

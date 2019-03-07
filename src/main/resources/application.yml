@@ -9,5 +9,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-      use-new-id-generator-mappings: true
+#      use-new-id-generator-mappings: true
 debug: true
