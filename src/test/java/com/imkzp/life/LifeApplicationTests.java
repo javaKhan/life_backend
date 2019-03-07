@@ -3,14 +3,21 @@ package com.imkzp.life;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+//@SpringBootTest
 public class LifeApplicationTests {
 
     @Test
     public void contextLoads() {
     }
 
+    @Test
+    public void testPwd(){
+        BCryptPasswordEncoder bCryptPasswordEncoder = new  BCryptPasswordEncoder();
+        String pwden = bCryptPasswordEncoder.encode("123456");
+        System.out.println("=====>"+pwden);
+    }
 }
